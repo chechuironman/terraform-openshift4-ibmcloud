@@ -1,7 +1,7 @@
 locals {
   installer_workspace     = "${path.root}/installer/${var.cluster_name}"
-  openshift_installer_url = "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${var.openshift_version}"
-  # openshift_installer_url = "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/candidate-4.10"
+ # openshift_installer_url = "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${var.openshift_version}"
+  openshift_installer_url =  "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp-dev-preview"
 }
 
 resource "null_resource" "download_binaries" {
